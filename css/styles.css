@@ -1,0 +1,175 @@
+body {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;   
+  background: #fff;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #FF6B82;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 342px;
+  margin-bottom: 10px;
+}
+
+.header-title hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0 8px;
+}
+
+.container {
+  width: 341px;
+}
+
+.unit-option {
+  display: grid;
+  grid-template-columns: 20px 1fr 1fr;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 15px;
+  padding: 10px;
+  cursor: pointer;
+  background: #f8f8f8;
+  transition: all 0.3s ease;
+}
+
+.unit-option.active {
+  background: #fff0f5;
+  border: 2px solid #FF6B82;
+}
+
+.discount {
+  color: #FFFFFF;
+  background-color: #FF6B82;
+  font-size: 12px;
+  margin-left: 6px;
+  padding: 1px 5px;
+  border-radius: 2px;
+}
+
+.unit-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unit-with-discount {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.standard-price {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+.unit {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.discounted-price {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.actual-price {
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+.options {
+  grid-column: 1 / span 3;
+  margin-top: 10px;
+  display: none;
+}
+
+.options.active {
+  display: block;
+}
+
+.options-table {
+  margin-left: 30px;
+  border-collapse: collapse;
+  margin-top: 5px;
+}
+
+.options-table th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.options-table td {
+  padding: 5px 5px 8px 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.options-table select {
+  width: 65px;
+  padding: 4px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.total-delivery-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+}
+
+.free-delivery {
+  color: #FF6B82;
+}
+
+.total-price {
+  text-align: right;
+}
+
+.plus {
+  font-size: 25px;
+}
+
+.add-to-cart-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 342px;
+  height: 40px;
+  background-color: #FF6B82;
+  border: none;
+  color: white;
+  font-weight: 500;
+  gap: 7px;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.powered {
+  text-align: right;
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.5;
+  font-style: italic;
+  margin-top: 6px;
+}
